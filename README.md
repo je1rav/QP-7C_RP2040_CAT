@@ -35,12 +35,12 @@ Pushスイッチによる周波数切り替えには，少し長押し(0.7秒)�
 ### Windowsでの使用の注意点
 Windows上でwsjt-xと共に使用する場合しか検証していませんが，サウンド設定を以下のようにしておかないと4回目の送信で必ずハングアップしました．  
 TinyUSBのexamplesの中の”uac2-headset”でも同様なことが起きましたので，TinyUSBの方の問題かも知れません．  
-もしかしたら，TinyUSBのgithubのissue “UAC2 Headset example fails after some playback time #1728”が関係あるのかもしれません．  
+もしかしたら，TinyUSBのgithubのissue “UAC2 Headset example fails after some playback time #1728”が関係あるかもしれません．  
 macOSでは，問題なく動作しました．  
 #### Windowsのサウンド設定方法  
 	録音デバイスで，TinyUSB headsetのMicrophonesを”既定のデバイス”に設定する．
 	再生デバイスで，TinyUSB headsetのHeadphonesを”既定のデバイス”に設定する．
-	再生デバイスでTinyUSB headsetのHeadphonesを”既定のデバイス”に設定すると，送信時に変調音がpcのスピーカーから聞こえていますので，音量を下げるか0にしておいて下さい．
+	再生デバイスでTinyUSB headsetのHeadphonesを”既定のデバイス”に設定すると，送信時に変調音がpcのスピーカーから聞こえますので，音量を下げるか0にしておいて下さい．
 	wsjt-xの出力は最大にしておきます．
 
 ### ビルドの方法
