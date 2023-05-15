@@ -38,7 +38,7 @@ TinyUSBのexamplesの中の”uac2-headset”でも同様なことが起きま�
 もしかしたら，TinyUSBのgithubのissue “UAC2 Headset example fails after some playback time #1728”が関係あるのかもしれません．  
 macOSでは，問題なく動作しました．  
 #### Windowsのサウンド設定方法  
-	録音でデバイスでも，TinyUSB headsetのMicrophonesを”既定のデバイス”に設定する．
+	録音デバイスで，TinyUSB headsetのMicrophonesを”既定のデバイス”に設定する．
 	再生デバイスで，TinyUSB headsetのHeadphonesを”既定のデバイス”に設定する．
 	再生デバイスでTinyUSB headsetのHeadphonesを”既定のデバイス”に設定すると，送信時に変調音がpcのスピーカーから聞こえていますので，音量を下げるか0にしておいて下さい．
 	wsjt-xの出力は最大にしておきます．
