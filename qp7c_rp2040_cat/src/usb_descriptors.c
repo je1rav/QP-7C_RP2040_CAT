@@ -3,6 +3,7 @@
  *
  * Copyright (c) 2023 Hitoshi Kawaji <je1rav@gmail.com>
  *    Modified slightly from "uac2_headset" to use as a UAC2-CDC composite device
+ *    on RP2040.
  * Copyright (c) 2020 Ha Thach (tinyusb.org)
  * Copyright (c) 2020 Jerzy Kasenberg
  *
