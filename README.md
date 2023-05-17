@@ -34,6 +34,7 @@ Xiao RP2040のオンボードLEDを使用し，受信時には緑が点灯し，
 もしかすると，一度USBケーブルを抜き差ししないといけないかもしれません．  
 
 ### Windowsでの使用の注意点
+（リモートアクセスして利用した場合でのみ，有効でした．　スタンドアロンでの使用では相変わらずハングアップします．）  
 Windows上でwsjt-xと共に使用する場合しか検証していませんが，サウンド設定を以下のようにしておかないと4回目の送信で必ずハングアップしました．  
 TinyUSBのexamplesの中の”uac2-headset”でも同様なことが起きましたので，TinyUSBの方の問題かも知れません．  
 もしかしたら，TinyUSBのgithubのissue “UAC2 Headset example fails after some playback time #1728”が関係あるかもしれません．  
