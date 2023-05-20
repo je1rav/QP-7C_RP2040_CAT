@@ -346,9 +346,15 @@ void receiving() {
   audio_read_number = USB_Audio_read(monodata); // read in the USB Audio buffer to check the transmitting
   if (audio_read_number != 0) 
   {
-    Tx_Start = 1;
-    not_TX_first = 0;
-    return;
+    uint16_t monomax = 0;
+    for (int i=0; i<audio_read_number; i++){
+      if (abs(monodata[i]) > monomax) monomax = abs(monodata[i]);
+    }
+    if (monomax > 22938){                       // VOX if singanl exceeds 70% of 2^15
+      Tx_Start = 1;
+      not_TX_first = 0;
+      return;
+    }
   }
   freqChange();
   int16_t rx_adc = (int16_t)(adc() - adc_offset); //read ADC data (8kHz sampling)
