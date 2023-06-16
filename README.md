@@ -39,11 +39,6 @@ TinyUSBのexamplesの中の”uac2-headset”でも同様なことが起きま�
 もしかしたら，TinyUSBのgithubのissue “UAC2 Headset example fails after some playback time #1728”が関係あるかもしれません．  
 ただ，”uac2-headset”はAudacityでの複数回の再生では大丈夫なのでソフトとの相性の問題も考えられます．  
 他方，macOSでは，問題なく動作しました．  
-#### Windowsのサウンド設定方法（旧ファームウェア；windowsをリモートアクセスして利用した場合には有効，スタンドアロンでの使用ではハングアップします．）
-	録音デバイスで，TinyUSB headsetのMicrophonesを”既定のデバイス”に設定する．
-	再生デバイスで，TinyUSB headsetのHeadphonesを”既定のデバイス”に設定する．
-	再生デバイスでTinyUSB headsetのHeadphonesを”既定のデバイス”に設定すると，送信時に変調音がpcのスピーカーから聞こえますので，音量を下げるか0にしておいて下さい．
-	wsjt-xの出力は最大にしておきます．
 #### Windowsのサウンド設定方法（2023年5月20日版ファームウェア；スタンドアロンでも大丈夫）
 	"サウンド詳細設定"の”録音デバイスで，TinyUSB　headsetのMicrophonesのプロパティ中で「聴く」を選択し，「このデバイスを聴く」にチェックをつけます．
 	さらに，このデバイスを使用して再生する機器に”Headphones(TinyUSB headset)”を選択して下さい．
